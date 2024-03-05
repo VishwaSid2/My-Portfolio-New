@@ -155,6 +155,7 @@ header nav {
   border: 0.22rem solid var(--black);
 }
 .nav__menubars.active {
+  margin-top: -1.5rem;
   transform: translateX(1px);
 }
 .nav__menubars.active .line0 {
@@ -273,7 +274,7 @@ a .ltext:hover .ltext__1 {
 }
 /* a .ltext:hover .ltext__2 {
   /* transform: scale(1); */
-  /* transform: translateY(calc(1 * (var(--navtitlesize)))); 
+/* transform: translateY(calc(1 * (var(--navtitlesize)))); 
 } */
 
 /* END NAVBAR */
@@ -3040,7 +3041,7 @@ footer .line.two {
 @media only screen and (min-width: 1400px) {
   header .fullnav .fullnav__top {
     margin-top: -2rem;
-    
+
     margin-bottom: 1.5rem;
   }
 }
