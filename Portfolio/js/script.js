@@ -1,15 +1,15 @@
 "use strict";
 // LOADER REFRESH EFFECT DIV
 
-// const loader = document.createElement("div");
-// loader.classList.add("load");
-// window.addEventListener("load", () => {
-//   console.log(loader);
-//   document.body.appendChild(loader);
-//   setTimeout(() => {
-//     loader.classList.add("loaded");
-//   }, 10);
-// });
+const loader = document.createElement("div");
+loader.classList.add("load");
+window.addEventListener("load", () => {
+  console.log(loader);
+  document.body.appendChild(loader);
+  setTimeout(() => {
+    loader.classList.add("loaded");
+  }, 10);
+});
 
 // NAVBAR TOGGLER
 const navbarX = document.querySelector(".nav__menubars");

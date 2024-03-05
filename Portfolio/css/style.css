@@ -3040,6 +3040,7 @@ footer .line.two {
 @media only screen and (min-width: 1400px) {
   header .fullnav .fullnav__top {
     margin-top: -2rem;
+    
     margin-bottom: 1.5rem;
   }
 }
