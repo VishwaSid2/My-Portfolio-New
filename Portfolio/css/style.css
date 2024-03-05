@@ -57,6 +57,22 @@ body.lw footer hr {
 body.lw .hero {
   background-color: var(--lightwhite);
 }
+
+html.dark,
+html.dark img,
+html.dark .myprocess__bottom__holders {
+  filter: invert(1);
+}
+.toggler-holders svg {
+  transition: all 0.15s ease;
+}
+html.dark .toggler-holders svg {
+  fill: var(--lightwhite);
+}
+body.lw .toggler-holders svg {
+  fill: var(--lightblack);
+}
+
 /* ROOT DIV */
 
 .root {
@@ -141,6 +157,9 @@ header nav {
   transition: 0.5s ease;
   cursor: pointer;
 }
+.nav__menubars {
+  margin-top: -0.5rem;
+}
 .nav__menubars * {
   width: 3.75rem;
   height: 0.3rem;
@@ -163,6 +182,18 @@ header nav {
 }
 .nav__menubars.active .line1 {
   transform: rotate(-45deg);
+}
+.toggler-holders {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.toggler-holders .toggler svg {
+  width: 3rem;
+  height: 3rem;
+  margin-top: 0.5rem;
+  fill: var(--lightwhite);
 }
 
 header .fullnav {
@@ -3043,5 +3074,8 @@ footer .line.two {
     margin-top: -2rem;
 
     margin-bottom: 1.5rem;
+  }
+  .stacks {
+    margin-top: 80rem;
   }
 }
