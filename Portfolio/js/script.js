@@ -28,14 +28,17 @@ function lightDark() {
   console.log(localStorage.getItem("land"));
 }
 // REMEMBER THE LIGHT AND DARK MODE IN LOCAL STORAGE
+localStorage.setItem("land", "dark");
 const landvalue = localStorage.getItem("land");
 landvalue == "dark" ? (html.className = "") : (html.className = "dark");
+
 lightDark();
 
 togglerContainer.addEventListener("click", () => {
   html.classList.toggle("dark");
   lightDark();
 });
+
 // NAVBAR TOGGLER
 const navbarX = document.querySelector(".nav__menubars");
 const fullnavbar = document.querySelector("header .fullnav");
