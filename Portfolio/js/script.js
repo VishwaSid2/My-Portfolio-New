@@ -28,7 +28,7 @@ function lightDark() {
   console.log(localStorage.getItem("land"));
 }
 // REMEMBER THE LIGHT AND DARK MODE IN LOCAL STORAGE
-localStorage.setItem("land", "dark");
+// this is onload changer localStorage.setItem("land", "dark");
 const landvalue = localStorage.getItem("land");
 landvalue == "dark" ? (html.className = "") : (html.className = "dark");
 
