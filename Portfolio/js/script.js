@@ -20,18 +20,21 @@ const html = document.querySelector("html");
 function lightDark() {
   if (html.classList.contains("dark")) {
     togglerContainer.innerHTML = darksvg;
-    localStorage.setItem("land", "light");
+    localStorage.setItem("land", "dark");
   } else {
     togglerContainer.innerHTML = lightsvg;
-    localStorage.setItem("land", "dark");
+    localStorage.setItem("land", "light");
   }
   console.log(localStorage.getItem("land"));
 }
 // REMEMBER THE LIGHT AND DARK MODE IN LOCAL STORAGE
-// this is onload changer localStorage.setItem("land", "dark");
 const landvalue = localStorage.getItem("land");
-landvalue == "dark" ? (html.className = "") : (html.className = "dark");
-
+if (landvalue === "dark") {
+  html.classList.add("dark");
+} else {
+  html.classList.remove("dark");
+  // TERNARY OPERATOR AND CLASSNAME NOT A WISE CHOICE AND THE TOOGLER CHANGED VICE VERSA
+}
 lightDark();
 
 togglerContainer.addEventListener("click", () => {
